@@ -50,8 +50,8 @@ def carregarDF(dataFrameFINAL: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
     with DAG('raizenDAG', start_date = datetime(2022,6,27), schedule_interval = '30 * * * *', catchup = False) as dag:
-        Extração = PythonOperator(
-        task_id='Extração', 
+        Extracao = PythonOperator(
+        task_id='Extracao', 
         python_callable=capturaDados,
         dag=dag
         )
@@ -70,4 +70,4 @@ if __name__ == "__main__":
             dag=dag
         )
 
-Extração>>[derivateFuels, diesel]
+Extracao>>[derivateFuels, diesel]
