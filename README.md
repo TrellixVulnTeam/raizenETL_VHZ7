@@ -9,8 +9,6 @@ Resolução do case [made available](http://www.anp.gov.br/dados-estatisticos) b
 
 This `xls` file has some pivot tables like this one:
 
-![Pivot Table](./images/pivot.png)
-
 The developed pipeline is meant to extract and structure the underlying data of two of these tables:
 - Sales of oil derivative fuels by UF and product
 - Sales of diesel by UF and type
