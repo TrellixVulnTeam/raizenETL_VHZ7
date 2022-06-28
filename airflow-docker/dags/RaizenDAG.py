@@ -70,4 +70,4 @@ if __name__ == "__main__":
             dag=dag
         )
 
-Extracao>>[derivateFuels, diesel]
+Extracao>>[derivateFuels,diesel]
