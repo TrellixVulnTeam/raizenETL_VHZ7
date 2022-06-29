@@ -55,7 +55,6 @@ if __name__ == "__main__":
         python_callable=capturaDados,
         dag=dag
         )
-        
         derivateFuels = PythonOperator(
             task_id='LoadDerivados',
             python_callable=transformar,
